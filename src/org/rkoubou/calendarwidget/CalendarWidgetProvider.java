@@ -1,8 +1,6 @@
 
 package org.rkoubou.calendarwidget;
 
-import org.rz.calendarwidget.R;
-
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
 import android.content.ComponentName;
