@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="org.rkoubou.calendarwidget"
+      android:versionCode="1"
+      android:versionName="1.0.0">
+
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="4"/>
+
+    <application android:label="@string/app_name" android:icon="@drawable/calendar_icon">
+        <receiver android:name="org.rkoubou.calendarwidget.CalendarWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:resource="@xml/appwidget" android:name="android.appwidget.provider"></meta-data>
+        </receiver>
+    </application>
+
+</manifest>
